@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("BG-1.png");
+    background-size: cover;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    padding: 0 8%;
+    position: relative;
+    background-image: url("BG-1.png");
+    background-size: cover;
+}
+.logo{
+    padding: 10px 0;
+}
+.content{
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    color: #fff;
+}
+.content .glassmorphism{
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    padding: 25px;
+}
+.content h1{
+    font-size: 64px;
+    font-weight: 600;
+}
+.content h1 span{
+    color: #ff3753;
+}
+.launch-time{
+    display: flex;
+}
+.launch-time div{
+    flex-basis: 100px;
+}
+.launch-time div p{
+    font-size: 60px;
+    margin-bottom: 0px;
+}
+.mascot{
+    display: flex;
+    margin-left: 54vw;
+}
+/*--
+.mascot img{
+    width: 30vw;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    padding: 25px;
+}
+--*/
+.mascot img{
+    width: 30vw;
+}
+@media (min-width: 1280px) {
+    .mascot2{
+        display: none;
+    }
+}
+@media (max-width: 1279px) {
+    .content{
+        top: 30vh;
+    }
+    .content p{
+        font-size: 5vw;
+    }
+    .content h1{
+        font-size: 8vw;
+    }
+    #days{
+        font-size: 8vw;
+    }
+    #hours{
+        font-size: 8vw;
+    }
+    #minutes{
+        font-size: 8vw;
+    }
+    #seconds{
+        font-size: 8vw;
+    }
+    .content .mascot{
+        display: none;
+    }
+    .mascot2{
+        display: flex;
+        justify-content: center;
+        margin-top: 40vh;
+    }
+    .mascot2 img{
+        width: fit-content;
+    }
+    .content .glassmorphism{
+        box-shadow: none;
+        border-radius: 0;
+        background: none;
+        overflow: hidden;
+        padding: 0;
+    }
+}
+@media (max-width: 1279px) and (orientation: landscape) {
+    .content{
+        margin-top: 10vh;
+    }
+    .content p{
+        font-size: 3vw;
+    }
+    .content h1{
+        font-size: 5vw;
+    }
+    #days{
+        font-size: 5vw;
+    }
+    #hours{
+        font-size: 5vw;
+    }
+    #minutes{
+        font-size: 5vw;
+    }
+    #seconds{
+        font-size: 5vw;
+    }
+    .mascot2{
+        display: flex;
+        justify-content: center;
+        margin-top: -7vh;
+        margin-left: 55vw;
+    }
+}
